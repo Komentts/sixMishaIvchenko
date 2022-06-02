@@ -1,0 +1,197 @@
+body {
+    background: #92b0b8;
+    
+}
+
+/* block */
+
+/* background: меняет цвет фона за таблицами */
+/* 010 */
+.card {
+    background: #92b0b8;
+}
+
+/* content: '': для заполнения контента определеного елемента
+display: table: формирирует таблицу
+clear: both: для перемещение вниз объекта*/
+/* 011 */
+.card::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* float: left: подвигает елементы в лево
+margin: 1%: для отступов 
+border: для выдиления границ
+background-image: url(../imgs/fon.png); фон с помощью картинки в табличной части
+width: 480px;height: 450px; высота и ширина
+border-radius: 50px; для угловых границ*/
+/* 010 */
+.card__item {
+    float: left;
+    margin: 1%;
+    border: 2px solid rgb(65, 114, 121);
+    background-image: url(../imgs/fon.png);
+    width: 20rem;
+    height: 31.125rem;
+    border-radius: 3.125rem;
+}
+
+/* margin: 1rem; отступы */
+/* 030 */
+.card__main,.card__desc,.card__code {
+    margin: 1rem;
+}
+
+/* float: right; выравнивание по правой стороне */
+/* 010 */
+.card__imgs {
+    float: right;
+}
+
+/*text-align: center; для текста по центру 
+font-size: 27px; размер */ 
+/* 010 */
+.card__header {
+    text-align: center;
+    font-size: 1.6875rem;
+}
+
+/*margin: 10px 2px;
+color: #22474e; смена цвета
+text-align: center; централизацыя объекта */
+/* 010 */
+.card__heading {
+    margin: .625rem .125rem;
+    color: #22474e;
+    text-align: center;
+}
+ 
+.card__code {
+
+    color: #92b0b8;
+}
+
+/*font-size: 17px; размер елемента
+line-height: 21px; пространство между строками
+padding: 14px 54px 15px; внутренние отступы
+background-color: #35B8BE; цвет фона
+border-radius: 50px; угловые грани */ 
+/* 010 */
+.button {
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+    padding: .875rem 3.375rem .9375rem;
+    background-color: #35B8BE;
+    border-radius: 3.525rem;
+    text-align: right;
+}
+
+/*text-align: right; текс по порайо стороне
+margin: 10px; сокращение  полей*/
+/* 010 */
+.footer__text {
+    margin: .625rem;
+    text-align: right;
+}
+
+/* menu */
+
+.naw {
+    font-size: 0;
+    margin-right: 5%;
+}
+
+.nav__item {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    margin: 0%;
+    border-radius: 40%;
+    background-image: url(../imgs/link.png);
+    color: rgb(255, 255, 255);
+}
+
+.nav__item:hover .dropdown  {
+    display: block;
+}
+
+.dropdown__link {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(241, 241, 241);
+}
+
+.wrspper {
+    margin-bottom: 0.5%;
+    right: 6%;
+    padding: 10px;
+    padding-left: 20px;
+   
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    
+}
+
+.dropdown__item {
+    display: block;
+    background-image: url(../imgs/link.png);
+    width: 92%;
+    border-radius: 40%;
+    
+}
+
+
+.nav__item:hover .dropdown__two  {
+    display: flex;
+}
+
+.dropdown__item:hover .drw {
+    display: list-item;
+    top: 80%;
+    margin: 0;
+    right: 0%;
+    left: 92%;
+ 
+}
+.drw {
+    display: none;
+    position: absolute;
+    
+}
+
+.dropdown__item-lil {
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    background-image: url(../imgs/link.png);
+    border-radius: 40%;
+    
+}
+
+.dropdown__two {
+    position: absolute;
+    display: none;
+    
+}
+
+.nav__link,
+.dropdown__link-lol {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.dropdown__item {
+    font-size: 1.5rem;
+    display: block;
+}
+
