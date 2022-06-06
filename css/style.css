@@ -1,11 +1,10 @@
+/* background: меняет цвет фона шапки */
+/* 001 */
 body {
-    /* background: #92b0b8; */
-    background: #2fb6db;
-    
+    background: #92b0b8;
 }
 
 /* block */
-
 /* background: меняет цвет фона за таблицами */
 /* 010 */
 .card {
@@ -69,8 +68,9 @@ text-align: center; централизацыя объекта */
     text-align: center;
 }
  
+/* color: #22474e; смена цвета */
+/* 010 */
 .card__code {
-
     color: #92b0b8;
 }
 
@@ -98,12 +98,15 @@ margin: 10px; сокращение  полей*/
 }
 
 /* menu */
-
+/* font-size: размер елемента 
+margin-right: устанавливает внешний отступ справа от элемента*/
+/* 010 */
 .naw {
     font-size: 0;
     margin-right: 5%;
 }
 
+/* 010 */
 .nav__item {
     font-size: 1.5rem;
     display: inline-block;
@@ -114,10 +117,17 @@ margin: 10px; сокращение  полей*/
     color: rgb(255, 255, 255);
 }
 
+/* display: block; Превратит любой элемент в блок. */
+/* 011 */
 .nav__item:hover .dropdown  {
     display: block;
 }
 
+/* color: #22474e; смена цвета
+display: block; Превратит любой элемент в блок.
+padding: пространство между содержанием элемента 
+text-decoration: none; underline — подчёркивание; line-through — зачёркивание; overline — надчёркивание; none — убирает вышеперечисленные эффекты*/
+/* 010 */
 .dropdown__link {
     display: block;
     text-decoration: none;
@@ -125,62 +135,86 @@ margin: 10px; сокращение  полей*/
     color: rgb(241, 241, 241);
 }
 
+/* margin-bottom: Устанавливает величину отступа от нижнего края элемента.
+padding: пространство между содержанием элемента 
+padding-left: 20px;пространство между содержанием элемента по левую часть 
+right - отступ по правую часть*/
+/* 010 */
 .wrspper {
     margin-bottom: 0.5%;
     right: 6%;
     padding: 10px;
     padding-left: 20px;
-   
 }
 
-.dropdown {
-    position: absolute;
-    display: none;
-    
-}
-
+/* display: block; Превратит любой элемент в блок. 
+background-image: url(../imgs/link.png); фон с помощью картинки
+border-radius — это CSS-свойство, позволяющее разработчикам определять, как скругляются границы блока.
+Width Устанавливает ширину содержимого элемента*/
+/* 010 */
 .dropdown__item {
     display: block;
     background-image: url(../imgs/link.png);
     width: 92%;
     border-radius: 40%;
-    
 }
 
-
+/* display: flex; определяющее способность гибкого элемента растягиваться или сжиматься для заполнения собой доступного свободного пространства*/
+/* 011 */
 .nav__item:hover .dropdown__two  {
     display: flex;
 }
 
+/* display: list-item ключевых слова вызывают элемент для генерации ::marker псевдо-элемента с содержимым , указанным его list-style свойства (например , точку пули) вместе с основной коробкой указанного типа для его собственного содержания.
+left — выравнивание по левому краю блока
+right — выравнивание по правому краю блока
+top: — выравнивание по верхнему краю блока
+margin: устанавливает внешний отступ от элемента
+*/
+/* 011 */
 .dropdown__item:hover .drw {
     display: list-item;
     top: 80%;
     margin: 0;
     right: 0%;
     left: 92%;
- 
-}
-.drw {
-    display: none;
-    position: absolute;
-    
 }
 
+/* position: absolute; Абсолютное позиционирование делает две вещи: Элемент исчезает с того места, где он должен быть и позиционируется заново. 
+display: none; Если свойство display принимает значение none на элементе, то элемент удаляется из дерева доступности. */
+/* 010 */
+.drw, .dropdown {
+    display: none;
+    position: absolute;
+}
+
+/* display: block; Превратит любой элемент в блочный.  
+font-size: размер елемента
+background-image: url(../imgs/link.png); фон с помощью картинки
+text-decoration: none; underline — подчёркивание; line-through — зачёркивание; overline — надчёркивание; none — убирает вышеперечисленные эффекты
+border-radius — это CSS-свойство, позволяющее разработчикам определять, как скругляются границы блока.*/
+/* 010 */
 .dropdown__item-lil {
     font-size: 1.5rem;
     display: block;
     text-decoration: none;
     background-image: url(../imgs/link.png);
     border-radius: 40%;
-    
 }
 
+/* display: none; Если свойство display принимает значение none на элементе, то элемент удаляется из дерева доступности. 
+position: absolute; Абсолютное позиционирование делает две вещи: Элемент исчезает с того места, где он должен быть и позиционируется заново. */
+/* 010 */
 .dropdown__two {
     position: absolute;
     display: none;
-    
 }
 
+/* color: #22474e; смена цвета 
+display: block; Превратит любой элемент в блочный. 
+text-decoration: none; Убирает дикорации текса страндрнтые 
+padding: пространство между содержанием элемента*/
+/* 010 */
 .nav__link,
 .dropdown__link-lol {
     display: block;
@@ -189,8 +223,9 @@ margin: 10px; сокращение  полей*/
     color: rgb(255, 255, 255);
 }
 
-
-
+/* display: block; Превратит любой элемент в блочный.  
+font-size: размер елемента*/
+/* 010 */
 .dropdown__item {
     font-size: 1.5rem;
     display: block;
