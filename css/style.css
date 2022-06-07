@@ -50,7 +50,7 @@ border-radius: 50px; для угловых границ*/
     float: right;
 }
 
-/*text-align: center; для текста по центру 
+/*text-align: center; для текста по центру.
 font-size: 27px; размер */ 
 /* 010 */
 .card__header {
@@ -183,7 +183,7 @@ margin: устанавливает внешний отступ от элемен
 /* position: absolute; Абсолютное позиционирование делает две вещи: Элемент исчезает с того места, где он должен быть и позиционируется заново. 
 display: none; Если свойство display принимает значение none на элементе, то элемент удаляется из дерева доступности. */
 /* 010 */
-.drw, .dropdown {
+.drw, .dropdown, .dropdown__two {
     display: none;
     position: absolute;
 }
@@ -200,14 +200,6 @@ border-radius — это CSS-свойство, позволяющее разра
     text-decoration: none;
     background-image: url(../imgs/link.png);
     border-radius: 40%;
-}
-
-/* display: none; Если свойство display принимает значение none на элементе, то элемент удаляется из дерева доступности. 
-position: absolute; Абсолютное позиционирование делает две вещи: Элемент исчезает с того места, где он должен быть и позиционируется заново. */
-/* 010 */
-.dropdown__two {
-    position: absolute;
-    display: none;
 }
 
 /* color: #22474e; смена цвета 
