@@ -104,6 +104,12 @@ margin: 10px; сокращение  полей*/
     text-align: right;
 }
 
+.main__centr {
+    padding: 0% 19% 10% 19.5%;
+    background: #00c7ef;
+    float: right;
+}
+
 /* menu */
 /* font-size: размер елемента 
 margin-right: устанавливает внешний отступ справа от элемента*/
