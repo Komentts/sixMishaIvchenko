@@ -39,9 +39,16 @@ border-radius: 50px; для угловых границ*/
 }
 
 /* margin: 1rem; отступы */
-/* 030 */
-.card__main,.card__desc,.card__code {
+/* 010 */
+.card__main,.card__code {
     margin: 1rem;
+}
+
+.card__desc {
+    margin: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* float: right; выравнивание по правой стороне */
